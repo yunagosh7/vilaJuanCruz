@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  width: 400px;
+}
+
+.name, .dni {
+  font-family: var(--font-family);
+}
+
+#cta {
+  padding: 8px 24px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #48e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#cta:hover {
+  background-color: #69f;
+}

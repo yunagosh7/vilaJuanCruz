@@ -1,9 +1,14 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  margin: 0;
 }
 
 .main {
@@ -11,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -18,12 +24,9 @@
   flex-direction: column;
   justify-content: center;  
   align-items: center;
-  width: 400px;
+  /* width: 400px; */
 }
 
-.name, .dni {
-  font-family: var(--font-family);
-}
 
 #cta {
   padding: 8px 24px;
@@ -36,6 +39,37 @@
   cursor: pointer;
 }
 
+.skills {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+}
+
+
+.skills_item::before {
+  content: "📚";
+}
+.skills_item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  line-height: 1.4rem;
+}
+
 #cta:hover {
   background-color: #69f;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  padding: 16px;
+}
+
+.skills_title {
+  margin: 0;
 }
